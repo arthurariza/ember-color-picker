@@ -1,0 +1,13 @@
+<div class='input-group'>
+  <h2>{{@name}} : {{@value}}</h2>
+
+  {{! template-lint-disable require-input-label }}
+  <Input
+    @type='range'
+    min='0'
+    max='255'
+    @value={{@value}}
+    name={{@name}}
+    {{on 'change' @updateColor}}
+  />
+</div>

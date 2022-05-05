@@ -1,3 +1,22 @@
 <GeneralContainer>
-  <ColorPanel />
+  <ColorPanel
+    @red={{this.model.colors.red}}
+    @green={{this.model.colors.green}}
+    @blue={{this.model.colors.blue}}
+  />
+  <ColorInput
+    @name='red'
+    @value={{this.model.colors.red}}
+    @updateColor={{this.updateColor}}
+  />
+  <ColorInput
+    @name='green'
+    @value={{this.model.colors.green}}
+    @updateColor={{this.updateColor}}
+  />
+  <ColorInput
+    @name='blue'
+    @value={{this.model.colors.blue}}
+    @updateColor={{this.updateColor}}
+  />
 </GeneralContainer>
